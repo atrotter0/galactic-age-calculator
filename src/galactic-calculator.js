@@ -1,6 +1,7 @@
 export class GalacticCalculator {
-  constructor(dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
+  constructor(age, dateOfBirth) {
+    this.ageInput = age;
+    this.dobInput = dateOfBirth;
     this.lifeExpectancy = 78;
   }
 }
