@@ -17,4 +17,13 @@ describe('GalacticCalculator', function() {
     const expectedSeconds = 32 * 31536000;
     expect(calculator.getAgeInSeconds()).toEqual(expectedSeconds);
   });
+
+  it('should test that the difference in seconds is found between two dates', function() {
+    const stringDate = "1/1/1985";
+    const dateSplit = stringDate.split("/");
+    const inputToDate = new Date(dateSplit[2], dateSplit[0], dateSplit[1]);
+    const dateNow = Date.now();
+    const difference = Math.round((dateNow - Date.parse(inputToDate)) / 1000);
+    expect(calculator.getDifferenceInSeconds()).toEqual(difference);
+  });
 });
