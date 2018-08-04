@@ -30,4 +30,14 @@ export class GalacticCalculator {
    const ageAdjustment = 0.62;
    return this.ageInput * ageAdjustment;
   }
+
+  getMarsAge() {
+    const ageAdjustment = 1.88;
+    return this.ageInput * ageAdjustment;
+  }
+
+  getJupiterAge() {
+    const ageAdjustment = 11.86;
+    return this.ageInput * ageAdjustment;
+  }
 }

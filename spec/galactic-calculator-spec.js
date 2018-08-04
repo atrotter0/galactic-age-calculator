@@ -34,4 +34,14 @@ describe('GalacticCalculator', function() {
     const expectedResult = 19.84;
     expect(calculator.getVenusAge()).toEqual(expectedResult);
   });
+
+  it('should test that the users age is converted to age in Mars years', function() {
+    const expectedResult = 60.16;
+    expect(calculator.getMarsAge()).toEqual(expectedResult);
+  });
+
+  it('should test that the users age is converted to age in Jupiter years', function() {
+    const expectedResult = 379.52;
+    expect(calculator.getJupiterAge()).toEqual(expectedResult);
+  });
 });
