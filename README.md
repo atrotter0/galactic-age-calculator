@@ -1,10 +1,24 @@
-# Project Title
+# Galactic Age Calculator
 
-#### Epicodus JavaScript exercise, Date
+#### Epicodus JavaScript independent project, 08.04.18
 
-#### By Your Name Here
+#### By Abel Trotter
 
 ## Description
+
+A calculator to convert a user's age based on a specific planet's solar years.
+
+## Specs
+
+| Behavior | Input | Output |
+|----------|-------|--------|
+| Program takes a user's age in years and converts it into seconds. | 32 | 1,009,152,000 |
+| Program takes two dates and returns the difference in seconds between the two. | 11/11/1985, 8/4/2018 | 1,030,273,754 |
+| Program returns the age of a human in Mercury years. | 32 | 32 * .24 = 7.68 |
+| Program returns the age of a human in Venus years. | 32 | 32 * .62 = 19.84 |
+| Program returns the age of a human in Mars years. | 32 | 32 * 1.88 = 60.16 |
+| Program returns the age of a human in Jupiter years. | 32 | 32 * 11.86 = 379.52 |
+| Program determines how many years a user has left to live on each planet based on life expectancy. | Age: 32 | Earth Life Expectancy: 78, Mars Life Expectancy: 18.72. User is 7.68 years old and has 11.04 solar years left on Mars. |
 
 ## Setup on OSX
 
@@ -39,4 +53,4 @@
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Abel Trotter**
