@@ -49,6 +49,10 @@ A calculator to convert a user's age based on a specific planet's solar years.
 * Jasmine
 * Karma
 
+## Links
+
+[Github Repo] (https://github.com/atrotter0/galactic-age-calculator)
+
 ## License
 
 This software is licensed under the MIT license.
