@@ -19,11 +19,9 @@ describe('GalacticCalculator', function() {
   });
 
   it('should test that the difference in seconds is found between two dates', function() {
-    const stringDate = "1/1/1985";
-    const dateSplit = stringDate.split("/");
-    const inputToDate = new Date(dateSplit[2], dateSplit[0], dateSplit[1]);
+    const date = new Date(1985, 1, 1);
     const dateNow = Date.now();
-    const difference = Math.round((dateNow - Date.parse(inputToDate)) / 1000);
+    const difference = Math.round((dateNow - Date.parse(date)) / 1000);
     expect(calculator.getDifferenceInSeconds()).toEqual(difference);
   });
 });
