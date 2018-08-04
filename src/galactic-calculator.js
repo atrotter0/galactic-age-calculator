@@ -4,4 +4,13 @@ export class GalacticCalculator {
     this.dobInput = dateOfBirth;
     this.lifeExpectancy = 78;
   }
+
+  getAgeInSeconds() {
+    return this.ageInput * this.getSecondsInYear();
+  }
+
+  getSecondsInYear() {
+    const secondsInYear = 31536000;
+    return secondsInYear;
+  }
 }
