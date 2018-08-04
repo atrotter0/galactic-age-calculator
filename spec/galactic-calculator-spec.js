@@ -24,4 +24,9 @@ describe('GalacticCalculator', function() {
     const difference = Math.round((dateNow - Date.parse(date)) / 1000);
     expect(calculator.getDifferenceInSeconds()).toEqual(difference);
   });
+
+  it('should test that the users age is converted to age in Mercury years', function() {
+    const expectedResult = 7.68;
+    expect(calculator.getMercuryAge()).toEqual(expectedResult);
+  });
 });

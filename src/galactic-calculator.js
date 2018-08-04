@@ -20,4 +20,9 @@ export class GalacticCalculator {
     const dateNow = Date.now();
     return Math.round((dateNow - Date.parse(dobAsDate)) / 1000);
   }
+
+  getMercuryAge() {
+    const ageAdjustment = .24;
+    return this.ageInput * ageAdjustment;
+  }
 }
