@@ -29,4 +29,9 @@ describe('GalacticCalculator', function() {
     const expectedResult = 7.68;
     expect(calculator.getMercuryAge()).toEqual(expectedResult);
   });
+
+  it('should test that the users age is converted to age in Venus years', function() {
+    const expectedResult = 19.84;
+    expect(calculator.getVenusAge()).toEqual(expectedResult);
+  });
 });

@@ -22,7 +22,12 @@ export class GalacticCalculator {
   }
 
   getMercuryAge() {
-    const ageAdjustment = .24;
+    const ageAdjustment = 0.24;
     return this.ageInput * ageAdjustment;
+  }
+
+  getVenusAge() {
+   const ageAdjustment = 0.62;
+   return this.ageInput * ageAdjustment;
   }
 }
