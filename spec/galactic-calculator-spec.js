@@ -8,8 +8,8 @@ describe('GalacticCalculator', function() {
   });
 
   it('should test that the object is instantiated with the correct properties', function() {
-    expect(calculator.ageInput).toEqual(32);
-    expect(calculator.dobInput).toEqual("1/1/1985");
+    expect(calculator.age).toEqual(32);
+    expect(calculator.dob).toEqual("1/1/1985");
     expect(calculator.lifeExpectancy).toEqual(78);
   });
 
@@ -43,5 +43,15 @@ describe('GalacticCalculator', function() {
   it('should test that the users age is converted to age in Jupiter years', function() {
     const expectedResult = 379.52;
     expect(calculator.getJupiterAge()).toEqual(expectedResult);
+  });
+
+  it('should test that ageResults object has all properties after instantiation', function() {
+    const expectedResult = {
+      mercury: 7.68,
+      venus: 19.84,
+      mars: 60.16,
+      jupiter: 379.52
+    };
+    expect(calculator.ageResults).toEqual(expectedResult);
   });
 });
