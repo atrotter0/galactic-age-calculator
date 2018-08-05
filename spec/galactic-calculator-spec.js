@@ -54,4 +54,9 @@ describe('GalacticCalculator', function() {
     };
     expect(calculator.ageResults).toEqual(expectedResult);
   });
+
+  it('should test that getMercuryLifespan returns the correct msg based on user age', function() {
+    const expectedMsg = "User is 7.68 years old and has 11.04 solar years left on Mercury.";
+    expect(calculator.lifeExpectancyResults.mercury).toEqual(expectedMsg);
+  });
 });

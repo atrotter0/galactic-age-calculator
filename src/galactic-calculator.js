@@ -54,7 +54,15 @@ export class GalacticCalculator {
   }
 
   getMercuryLifespan() {
+    const ageAdjustment = 0.24;
+    const mercuryAvgLifespan = this.lifeExpectancy * ageAdjustment;
+    const yearsOver = this.ageResults.mercury - mercuryAvgLifespan;
+    const yearsUnder = mercuryAvgLifespan - this.ageResults.mercury;
 
+    if (this.ageResults.mercury > mercuryAvgLifespan) {
+      return this.lifeExpectancyOverMsg("Mercury", this.ageResults.mercury, yearsOver);
+    }
+    return this.lifeExpectancyUnderMsg("Mercury", this.ageResults.mercury, yearsUnder);
   }
 
   getVenusLifespan() {
@@ -67,5 +75,13 @@ export class GalacticCalculator {
 
   getJupiterLifespan() {
 
+  }
+
+  lifeExpectancyOverMsg(planet, ageResult, yearsOver) {
+    return `User is ${ageResult} years old and has lived ${yearsOver} solar years longer than the average for planet ${planet}.`
+  }
+
+  lifeExpectancyUnderMsg(planet, ageResult, yearsUnder) {
+    return `User is ${ageResult} years old and has ${yearsUnder} solar years left on ${planet}.`
   }
 }
