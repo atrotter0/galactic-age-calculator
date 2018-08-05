@@ -27,36 +27,57 @@ describe('GalacticCalculator', function() {
 
   it('should test that the users age is converted to age in Mercury years', function() {
     const expectedResult = 7.68;
-    expect(calculator.getMercuryAge()).toEqual(expectedResult);
+    expect(calculator.getPlanetAge("mercury")).toEqual(expectedResult);
   });
 
   it('should test that the users age is converted to age in Venus years', function() {
     const expectedResult = 19.84;
-    expect(calculator.getVenusAge()).toEqual(expectedResult);
+    expect(calculator.getPlanetAge("venus")).toEqual(expectedResult);
   });
 
   it('should test that the users age is converted to age in Mars years', function() {
     const expectedResult = 60.16;
-    expect(calculator.getMarsAge()).toEqual(expectedResult);
+    expect(calculator.getPlanetAge("mars")).toEqual(expectedResult);
   });
 
   it('should test that the users age is converted to age in Jupiter years', function() {
     const expectedResult = 379.52;
-    expect(calculator.getJupiterAge()).toEqual(expectedResult);
+    expect(calculator.getPlanetAge("jupiter")).toEqual(expectedResult);
   });
 
   it('should test that ageResults object has all properties after instantiation', function() {
     const expectedResult = {
       mercury: 7.68,
       venus: 19.84,
+      earth: 32.00,
       mars: 60.16,
       jupiter: 379.52
     };
     expect(calculator.ageResults).toEqual(expectedResult);
   });
 
-  it('should test that getMercuryLifespan returns the correct msg based on user age', function() {
-    const expectedMsg = "User is 7.68 years old and has 11.04 solar years left on Mercury.";
+  it('should test that getPlanetLifespan returns the correct msg based on user age (32) and planet (mercury)', function() {
+    const expectedMsg = "User is 7.68 years old and has 11.04 solar years left on mercury.";
     expect(calculator.lifeExpectancyResults.mercury).toEqual(expectedMsg);
+  });
+
+  it('should test that getPlanetLifespan returns the correct msg based on user age (32) and planet (venus)', function() {
+    const expectedMsg = "User is 19.84 years old and has 28.52 solar years left on venus.";
+    expect(calculator.lifeExpectancyResults.venus).toEqual(expectedMsg);
+  });
+
+  it('should test that getPlanetLifespan returns the correct msg based on user age (32) and planet (earth)', function() {
+    const expectedMsg = "User is 32 years old and has 46.00 solar years left on earth.";
+    expect(calculator.lifeExpectancyResults.earth).toEqual(expectedMsg);
+  });
+
+  it('should test that getPlanetLifespan returns the correct msg based on user age (32) and planet (mars)', function() {
+    const expectedMsg = "User is 60.16 years old and has 86.48 solar years left on mars.";
+    expect(calculator.lifeExpectancyResults.mars).toEqual(expectedMsg);
+  });
+
+  it('should test that getPlanetLifespan returns the correct msg based on user age (32) and planet (jupiter)', function() {
+    const expectedMsg = "User is 379.52 years old and has 545.56 solar years left on jupiter.";
+    expect(calculator.lifeExpectancyResults.jupiter).toEqual(expectedMsg);
   });
 });
