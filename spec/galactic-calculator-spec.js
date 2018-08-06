@@ -80,4 +80,10 @@ describe('GalacticCalculator', function() {
     const expectedMsg = "User is 2.7 years old and has 3.88 solar years left on jupiter.";
     expect(calculator.lifeExpectancyResults.jupiter).toEqual(expectedMsg);
   });
+
+  it('should test that getPlanetLifespan returns the correct msg based on old user age (85) and planet (mars)', function() {
+    const newCalculator = new GalacticCalculator(85, "1/1/1933");
+    const expectedMsg = "User is 45.21 years old and has lived 3.72 solar years longer than the average for planet mars.";
+    expect(newCalculator.lifeExpectancyResults.mars).toEqual(expectedMsg);
+  });
 });

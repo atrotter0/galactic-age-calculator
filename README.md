@@ -19,6 +19,7 @@ A calculator to convert a user's age based on a specific planet's solar years.
 | Program returns the age of a human in Mars years. | 32 | 32 / 1.88 = 17.02 |
 | Program returns the age of a human in Jupiter years. | 32 | 32 / 11.86 = 2.7 |
 | Program determines how many years a user has left to live on each planet based on life expectancy. | Age: 32, Planet: Mars | User is 17.02 years old and has 24.47 solar years left on mars. |
+| If elderly, program determines how many years a user has lived longer on each planet based on life expectancy. | Age: 85, Planet: Mars | User is 45.21 years old and has lived 3.72 solar years longer than the average for planet mars. |
 
 ## Setup on OSX
 
