@@ -43,11 +43,11 @@ export class GalacticCalculator {
   }
 
   getPlanetAge(planet) {
-    return this.age * this.planetAgeAdjusters[planet];
+    return parseFloat((this.age / this.planetAgeAdjusters[planet]).toFixed(2));
   }
 
   getPlanetLifespan(planet) {
-    const planetLifespan = this.lifeExpectancy * this.planetAgeAdjusters[planet];
+    const planetLifespan = parseFloat((this.lifeExpectancy / this.planetAgeAdjusters[planet]).toFixed(2));
     const yearsOver = this.ageResults[planet] - planetLifespan;
     const yearsUnder = planetLifespan - this.ageResults[planet];
 
