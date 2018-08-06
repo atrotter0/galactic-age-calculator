@@ -14,11 +14,11 @@ A calculator to convert a user's age based on a specific planet's solar years.
 |----------|-------|--------|
 | Program takes a user's age in years and converts it into seconds. | 32 | 1,009,152,000 |
 | Program takes two dates and returns the difference in seconds between the two. | 11/11/1985, 8/4/2018 | 1,030,273,754 |
-| Program returns the age of a human in Mercury years. | 32 | 32 * .24 = 7.68 |
-| Program returns the age of a human in Venus years. | 32 | 32 * .62 = 19.84 |
-| Program returns the age of a human in Mars years. | 32 | 32 * 1.88 = 60.16 |
-| Program returns the age of a human in Jupiter years. | 32 | 32 * 11.86 = 379.52 |
-| Program determines how many years a user has left to live on each planet based on life expectancy. | Age: 32, Planet: Mars | User is 60.16 years old and has 86.48 solar years left on mars. |
+| Program returns the age of a human in Mercury years. | 32 | 32 / .24 = 133.33 |
+| Program returns the age of a human in Venus years. | 32 | 32 / .62 = 51.61 |
+| Program returns the age of a human in Mars years. | 32 | 32 / 1.88 = 17.02 |
+| Program returns the age of a human in Jupiter years. | 32 | 32 / 11.86 = 2.7 |
+| Program determines how many years a user has left to live on each planet based on life expectancy. | Age: 32, Planet: Mars | User is 17.02 years old and has 24.47 solar years left on mars. |
 
 ## Setup on OSX
 
